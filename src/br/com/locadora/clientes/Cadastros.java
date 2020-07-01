@@ -106,5 +106,9 @@ public class Cadastros {
             System.out.println("Nenhum veiculo cadastrado no sistema!");
         }
     }
+
+    public BancoDeDados retornaBd() {
+        return this.bd;
+    }
 }
 

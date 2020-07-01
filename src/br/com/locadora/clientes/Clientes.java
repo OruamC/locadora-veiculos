@@ -6,10 +6,12 @@ public class Clientes {
 
     private String nome;
     private String cpf;
+    private boolean possuiLocacao;
 
     public Clientes(String nome, String cpf) {
         this.nome = nome;
         this.cpf = cpf;
+        this.possuiLocacao = false;
     }
 
     public String getNome() {
@@ -20,5 +22,15 @@ public class Clientes {
         return cpf;
     }
 
+    public boolean isPossuiLocacao() {
+        return possuiLocacao;
+    }
 
+    public void locou() {
+        this.possuiLocacao = true;
+    }
+
+    public void devolveu() {
+        this.possuiLocacao = false;
+    }
 }

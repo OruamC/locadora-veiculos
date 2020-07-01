@@ -33,4 +33,12 @@ public class Veiculos {
     public void adicionarQuantidadeParaFrota(int valor) {
         this.quantidadeDeVeiculosDisponiveis += valor;
     }
+
+    public void locou() {
+        this.quantidadeDeVeiculosDisponiveis--;
+    }
+
+    public void devolveu() {
+        this.quantidadeDeVeiculosDisponiveis++;
+    }
 }
